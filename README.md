@@ -11,6 +11,8 @@ npm ci
 npm run dev
 ```
 
+The shared Axios client in `src/lib/api/index.ts` reads its base URL from `VITE_API_URL`. Set it in a local `.env` file when configuring a backend. `VITE_` variables are exposed to the browser; use public configuration values only. The client is not yet connected to the screens.
+
 ## Validation and build
 
 ```sh
