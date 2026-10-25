@@ -1,6 +1,6 @@
 # sandbox-notion-clone
 
-A React + TypeScript + Vite sandbox for a Notion-style application. The current app displays `hello world`; editor and persistence features are not implemented yet.
+A React + TypeScript + Vite sandbox for a Notion-style application. It includes sign-in (`/signin`), sign-up (`/signup`), home (`/`), and note detail (`/notes/:id`) screens, with a shared sidebar and search dialog. Authentication, note creation, editing, and persistence are not implemented yet.
 
 ## Development
 
