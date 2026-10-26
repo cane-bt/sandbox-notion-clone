@@ -1,6 +1,6 @@
 # sandbox-notion-clone
 
-A React + TypeScript + Vite sandbox for a Notion-style application. It includes sign-in (`/signin`), sign-up (`/signup`), home (`/`), and note detail (`/notes/:id`) screens, with a shared sidebar and search dialog. Authentication, note creation, editing, and persistence are not implemented yet.
+A React + TypeScript + Vite sandbox for a Notion-style application. It includes sign-in (`/signin`), sign-up (`/signup`), home (`/`), and note detail (`/notes/:id`) screens, with a shared sidebar and search dialog. The sign-up form sends registration data to the backend. Sign-in, session persistence, note creation, editing, and persistence are not implemented yet.
 
 ## Development
 
@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-The shared Axios client in `src/lib/api/index.ts` reads its base URL from `VITE_API_URL`. Set it in a local `.env` file when configuring a backend. `VITE_` variables are exposed to the browser; use public configuration values only. The client is not yet connected to the screens.
+The shared Axios client in `src/lib/api/index.ts` reads its base URL from `VITE_API_URL`. Set it in a local `.env` file when configuring a backend. `VITE_` variables are exposed to the browser; use public configuration values only. The sign-up screen uses `authRepository` to POST to `/auth/signup`, expecting a response containing `user` and `token`. Registration currently logs the response to the browser console; error feedback, session persistence, and post-registration navigation are not implemented yet. Use test accounts while working on this learning implementation.
 
 ## Validation and build
 
