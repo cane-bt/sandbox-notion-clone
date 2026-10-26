@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-26
+
+### Added
+
+- A sign-up repository and User entity, with the sign-up screen sending name, email, and password to `/auth/signup`. The register button is disabled while any field is empty. Session persistence and post-registration navigation are not implemented yet.
+- Learning notes and a TIL template covering API communication, user entities, and React form state.
+
 ## 2026-10-25
 
 ### Added
