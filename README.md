@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-The shared Axios client in `src/lib/api/index.ts` reads its base URL from `VITE_API_URL`. Set it in a local `.env` file when configuring a backend. `VITE_` variables are exposed to the browser; use public configuration values only. The sign-up screen uses `authRepository` to POST to `/auth/signup`, expecting a response containing `user` and `token`. Registration currently logs the response to the browser console; error feedback, session persistence, and post-registration navigation are not implemented yet. Use test accounts while working on this learning implementation.
+The shared Axios client in `src/lib/api/index.ts` reads its base URL from `VITE_API_URL`. Set it in a local `.env` file when configuring a backend. `VITE_` variables are exposed to the browser; use public configuration values only. The sign-up screen uses `authRepository` to POST to `/auth/signup`, expecting a response containing `user` and `token`. The repository also provides `signin(email, password)` for `/auth/signin`, with the same response shape; the sign-in screen is not connected yet. Registration currently logs the response to the browser console; error feedback, session persistence, and post-registration navigation are not implemented yet. Use test accounts while working on this learning implementation.
 
 ## Validation and build
 
