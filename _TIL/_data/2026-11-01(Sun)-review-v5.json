@@ -1,0 +1,113 @@
+{
+  "courses": [
+    {
+      "confirmed_on": "2026-11-01",
+      "id": "react-notion-clone",
+      "name": "React + Typescriptで超本格的なNotionクローンを作ろう",
+      "total": 53,
+      "url": "https://www.udemy.com/course/react-notion-clone/"
+    }
+  ],
+  "created_on": "2026-11-01",
+  "date": "2026-11-01",
+  "input_hashes": {
+    "README.md": "dd2e91dae2d98e9d3399d5e392e038028da67d1c900a86aab385e1026e56f465",
+    "_TIL/2026-10-25.md": "6eb437e355ce0b044e8198bab318975873db70f2631041ce3ae05f7d77f23469",
+    "_TIL/2026-10-26(Mon).md": "4ec965905333af1b3edf7bca53f520811f2196ef7aa00e0fc2592e06e2442c18",
+    "_TIL/2026-11-01(Sun)-review-v2.md": "b94c1163be4a349913a80d1f2655c452102c5447aba002fbd445d999378e5c67",
+    "_TIL/2026-11-01(Sun)-review-v3.md": "ba67e322b8ab6df173298e8af39b182d4221f8bde3290b10259a99dfe9730bd0",
+    "_TIL/2026-11-01(Sun)-review-v4.md": "e1f40ad48c0639aedd9a711c029a19f12dcfa6090412ce542a1ab5cada6f45be",
+    "_TIL/2026-11-01(Sun)-review.md": "18793135c6b88d7f1f7dbb57a54c1eaa4fb62e74c625fe5cdde4612118ee0f4f",
+    "_TIL/2026-11-01(Sun).md": "9bff5856aed9aad9212c62a698c2e5ff226e5e412cb33c211e7c1c2c3f7832ca",
+    "_TIL/_TEMPLATE.md": "c35717674555790a50e15b44c81193669f48b7ece93a3dc5c2dc88f42eaf5da4"
+  },
+  "logical": "_TIL/2026-11-01(Sun).md",
+  "operation_id": "til-20261101-storage-v5",
+  "records": [
+    {
+      "completed_by": "2026-11-01",
+      "course": "react-notion-clone",
+      "evidence": "2026-11-01に確認した本人提示の教材一覧：15〜17番に「完了済み」。受講日は不明。",
+      "first_completion": null,
+      "id": "notion-20261101-15",
+      "recorded_on": "2026-11-01",
+      "status": "complete",
+      "studied_on": null,
+      "supersedes": [],
+      "video": 15
+    },
+    {
+      "completed_by": "2026-11-01",
+      "course": "react-notion-clone",
+      "evidence": "2026-11-01に確認した本人提示の教材一覧：15〜17番に「完了済み」。受講日は不明。",
+      "first_completion": null,
+      "id": "notion-20261101-16",
+      "recorded_on": "2026-11-01",
+      "status": "complete",
+      "studied_on": null,
+      "supersedes": [],
+      "video": 16
+    },
+    {
+      "completed_by": "2026-11-01",
+      "course": "react-notion-clone",
+      "evidence": "2026-11-01に確認した本人提示の教材一覧：15〜17番に「完了済み」。受講日は不明。",
+      "first_completion": null,
+      "id": "notion-20261101-17",
+      "recorded_on": "2026-11-01",
+      "status": "complete",
+      "studied_on": null,
+      "supersedes": [],
+      "video": 17
+    },
+    {
+      "completed_by": "2026-11-01",
+      "course": "react-notion-clone",
+      "evidence": "2026-11-01 現セッションの本人申告「今日行った内容は18から21のすべて」",
+      "first_completion": true,
+      "id": "notion-20261101-18",
+      "recorded_on": "2026-11-01",
+      "status": "complete",
+      "studied_on": "2026-11-01",
+      "supersedes": [],
+      "video": 18
+    },
+    {
+      "completed_by": "2026-11-01",
+      "course": "react-notion-clone",
+      "evidence": "2026-11-01 現セッションの本人申告「今日行った内容は18から21のすべて」",
+      "first_completion": true,
+      "id": "notion-20261101-19",
+      "recorded_on": "2026-11-01",
+      "status": "complete",
+      "studied_on": "2026-11-01",
+      "supersedes": [],
+      "video": 19
+    },
+    {
+      "completed_by": "2026-11-01",
+      "course": "react-notion-clone",
+      "evidence": "2026-11-01 現セッションの本人申告「今日行った内容は18から21のすべて」",
+      "first_completion": true,
+      "id": "notion-20261101-20",
+      "recorded_on": "2026-11-01",
+      "status": "complete",
+      "studied_on": "2026-11-01",
+      "supersedes": [],
+      "video": 20
+    },
+    {
+      "completed_by": "2026-11-01",
+      "course": "react-notion-clone",
+      "evidence": "2026-11-01 現セッションの本人申告「今日行った内容は18から21のすべて」",
+      "first_completion": true,
+      "id": "notion-20261101-21",
+      "recorded_on": "2026-11-01",
+      "status": "complete",
+      "studied_on": "2026-11-01",
+      "supersedes": [],
+      "video": 21
+    }
+  ],
+  "schema": 1
+}

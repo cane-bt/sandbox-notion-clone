@@ -4,6 +4,8 @@
 
 ### Added
 
+- Record the Udemy course and its 53-video total, daily progress, and dated learning history.
+- Preserve the original TIL in `_TIL/_draft/` alongside versioned reviews, structured progress data, and the verified save-operation record. The generator skill remains local and is not distributed in this repository.
 - A sign-in repository method that posts email and password to `/auth/signin` and returns a User entity and token.
 - A sign-in form that sends email and password through the repository, with the button disabled while either field is empty.
 - Jotai-based current-user state shared by sign-up, sign-in, and the layout. Successful authentication redirects to home; the layout redirects users without current-user state to sign-in. State is in memory and is not restored after a reload.
