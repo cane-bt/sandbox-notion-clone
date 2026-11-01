@@ -4,6 +4,7 @@
 
 ### Added
 
+- Publish the ADR history and record authentication, lint, PR separation, and ADR publication decisions; generator skills remain local.
 - Record the Udemy course and its 53-video total, daily progress, and dated learning history.
 - Preserve the original TIL in `_TIL/_draft/` alongside versioned reviews, structured progress data, and the verified save-operation record. The generator skill remains local and is not distributed in this repository.
 - A sign-in repository method that posts email and password to `/auth/signin` and returns a User entity and token.

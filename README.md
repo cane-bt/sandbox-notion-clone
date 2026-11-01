@@ -27,6 +27,10 @@ The production build is written to `dist/`. `preview` serves that build locally.
 
 See [CHANGELOG.md](CHANGELOG.md) and [CHANGELOG_ja.md](CHANGELOG_ja.md) for changes.
 
+## 設計・運用の決定記録
+
+[ADR 一覧](.claude/ADR/README.md) に設計と運用の決定・代替案・経緯を記録します。ADR は Git で公開し、生成スキルや個人設定はローカル管理を維持します。`.claude/` 全体は除外しているため、新規 ADR は対象ファイルを明示して `git add -f .claude/ADR/<ファイル名>` で追加します。
+
 ## 学習用の教材
 
 [【実務レベルの開発を学びたい方へ】React + Typescriptで超本格的なNotionクローンを作ろう](https://www.udemy.com/course/react-notion-clone/?couponCode=26BBPAA2MX)
@@ -37,4 +41,4 @@ See [CHANGELOG.md](CHANGELOG.md) and [CHANGELOG_ja.md](CHANGELOG_ja.md) for chan
 
 `til-review` は初回保存時に原本を `_TIL/_draft/` へ内容を保持して退避し、復習版を `_TIL/` 直下へ版番号付きで保存します。受講データは `_TIL/_data/`、再実行・中断復旧の記録は `_TIL/.review-state/` に保存します。原本・復習版・受講データの一式を照合した処理だけを集計に利用します。保存原本は直接編集せず、改訂時は直下へ同名の新しい原本を用意します。コミット・公開は自動では行いません。
 
-`til-review` のスキル本体と ADR はローカル管理で、Git の追跡対象には含めていません。このリポジトリの clone だけでは自動生成コマンドは利用できません。保存済みの学習記録・受講データ・処理記録は参照できます。
+`til-review` のスキル本体はローカル管理で、Git の追跡対象には含めていません。このリポジトリの clone だけでは自動生成コマンドは利用できません。保存済みの学習記録・受講データ・処理記録は参照できます。
