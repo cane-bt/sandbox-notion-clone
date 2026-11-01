@@ -17,6 +17,8 @@
 - [ADR 0013: 機能・開発設定・学習記録を別 PR に分ける](0013-topic-pull-requests-and-validation.md)
 - [ADR 0014: ADR を Git で公開し、スキルはローカル管理を続ける](0014-publish-adrs-preserve-local-skills.md)
 
+- [ADR 0015: TIL の完成版を日付名に統合する](0015-simplify-til-storage.md)
+
 ## 決定にしていない話題
 
 Fetch への置換、import ソート・保存時自動修正、認証切れと権限不足に応じた一覧・トースト表示、トークン永続化は未採用または未実装の検討事項。Outline の設計意図は推測であり本リポジトリの決定根拠にしない。VS Code ミニマップの非表示は個人の表示設定でありプロジェクトの構成決定ではない。11月1日の18〜21完了などの受講実績は TIL データに保存し、ADR は記録方法を扱う。

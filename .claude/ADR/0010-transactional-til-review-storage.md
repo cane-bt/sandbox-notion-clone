@@ -1,7 +1,7 @@
 # ADR 0010: TIL の原本退避・固定プレビュー・集計と再開可能な一式保存
 
 - 日付: 2026-11-01
-- 状態: 採用
+- 状態: 保存方式は置換済み（[ADR 0015](0015-simplify-til-storage.md)）。原文保持の方針は継承。
 - 関連: [ADR 0009](0009-show-cumulative-udemy-progress.md)、[ADR 0004](0004-preserve-author-voice-in-til.md)、[ADR 0007](0007-generate-til-review-toc.md)
 - 置換範囲: ADR 0004 の原本と復習版を同じフォルダに保持する配置。原文とAI説明の分離は継承。
 
