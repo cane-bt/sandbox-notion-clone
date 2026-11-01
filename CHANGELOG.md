@@ -6,6 +6,8 @@
 
 - A sign-in repository method that posts email and password to `/auth/signin` and returns a User entity and token.
 
+- A sign-in form that sends email and password through the repository, with the button disabled while either field is empty.
+
 ## 2026-10-26
 
 ### Added

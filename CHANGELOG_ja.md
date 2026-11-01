@@ -1,5 +1,5 @@
 ---
-source_sha256: b15c1eafc3598e303e9c6e5f8d16f47a79857eaf280de4d50bc41397979a8089
+source_sha256: 72c87daa19cead6630a8a5cecb2536e85b3af8fdee2a0793cb831845779a1be8
 translated_at: 2026-11-01
 ---
 
@@ -10,6 +10,8 @@ translated_at: 2026-11-01
 ### Added
 
 - メールアドレスとパスワードを `/auth/signin` に送信し、User エンティティとトークンを返すサインイン用 repository メソッドを追加。
+
+- サインイン画面から repository 経由でメールアドレスとパスワードを送信し、空欄がある間はログインボタンを無効化。
 
 ## 2026-10-26
 
