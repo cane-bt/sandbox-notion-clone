@@ -21,6 +21,8 @@ npm run build
 npm run preview
 ```
 
+`npm run lint` reports console calls as errors. Run `npm run lint -- --fix` to apply supported fixes, including unused-import removal; console calls are reported rather than automatically removed. Import sorting is not configured.
+
 The production build is written to `dist/`. `preview` serves that build locally.
 
 See [CHANGELOG.md](CHANGELOG.md) and [CHANGELOG_ja.md](CHANGELOG_ja.md) for changes.

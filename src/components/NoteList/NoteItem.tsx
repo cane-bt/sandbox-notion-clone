@@ -5,9 +5,7 @@ import {
   DropdownMenuItem,
 } from '../ui/dropdown-menu';
 import {
-  FiChevronDown,
   FiChevronRight,
-  FiFile,
   FiMoreHorizontal,
   FiPlus,
   FiTrash2,
