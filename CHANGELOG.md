@@ -2,13 +2,20 @@
 
 ## 2026-11-01
 
-### Fixed
+### Added
 
-- Remove unused note-item icon imports that prevented the TypeScript build.
+- A sign-in repository method that posts email and password to `/auth/signin` and returns a User entity and token.
+- A sign-in form that sends email and password through the repository, with the button disabled while either field is empty.
+- Jotai-based current-user state shared by sign-up, sign-in, and the layout. Successful authentication redirects to home; the layout redirects users without current-user state to sign-in. State is in memory and is not restored after a reload.
 
 ### Changed
 
+- Require Node.js 22.12 or newer for the Jotai 3 dependency.
 - Enable ESLint errors for console calls and opt into automatic removal of unused imports with `npm run lint -- --fix`. Import sorting is not enabled.
+
+### Fixed
+
+- Remove unused note-item icon imports that prevented the TypeScript build.
 
 ## 2026-10-26
 

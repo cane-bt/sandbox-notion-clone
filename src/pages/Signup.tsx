@@ -1,18 +1,22 @@
 import { useState } from "react";
 import "../styles/pages/auth.css";
 import { authRepository } from "../modules/auth/auth.repository";
+import { currentUserAtom } from "../modules/auth/current-user.state";
+import { useAtom } from "jotai";
+import { Navigate } from "react-router-dom";
 
 export default function Signup() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [currentUser, setCurrentUser] = useAtom(currentUserAtom);
 
   const signup = async () => {
-    const { user, token } = await authRepository.signup(name, email, password);
-    console.log("user:", user);
-    console.log(user);
-    console.log("token:" + token);
+    const { user } = await authRepository.signup(name, email, password);
+    setCurrentUser(user);
   };
+
+  if (currentUser) return <Navigate to="/" replace />;
 
   return (
     <div className="auth-container">

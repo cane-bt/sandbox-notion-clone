@@ -1,5 +1,5 @@
 ---
-source_sha256: c99b668fd47255d6a0984dbb940dd950b72ab014ff9738e8b79cd3cb49847ea5
+source_sha256: 10dc78feb0a8fcc11d03cabe63a4cd8b8f0e60587f1e23f8c6fc758554488635
 translated_at: 2026-11-01
 ---
 
@@ -7,13 +7,20 @@ translated_at: 2026-11-01
 
 ## 2026-11-01
 
-### Fixed
+### Added
 
-- TypeScript のビルドを妨げていたノート項目の未使用アイコン import を削除。
+- メールアドレスとパスワードを `/auth/signin` に送信し、User エンティティとトークンを返すサインイン用 repository メソッドを追加。
+- サインイン画面から repository 経由でメールアドレスとパスワードを送信し、空欄がある間はログインボタンを無効化。
+- Jotai による現在のユーザー情報の共有を追加し、登録・ログイン後はホームへ、ユーザー情報がない場合はレイアウトからサインインへ遷移。状態はメモリ上で管理し、再読み込み時の復元は未実装。
 
 ### Changed
 
+- Jotai 3 の依存要件に合わせ、Node.js 22.12 以降を必須として明記。
 - console 呼び出しを ESLint のエラー対象にし、`npm run lint -- --fix` で未使用 import を自動削除する設定を追加。import のソートは未導入。
+
+### Fixed
+
+- TypeScript のビルドを妨げていたノート項目の未使用アイコン import を削除。
 
 ## 2026-10-26
 
