@@ -2,12 +2,11 @@
 
 元の学習メモを残し、関連するセッションの説明を補足として整理した復習用記録。
 
-- 元ファイル: [2026-11-01(Sun).md](<2026-11-01(Sun).md>)
+- 元ファイル: [2026-11-01(Sun).md](<_draft/2026-11-01(Sun).md>)
 - 学習対象日: 2026-11-01（原本のファイル名による）
 - 整理日: 2026-11-01（Asia/Tokyo）
 - 会話の参照範囲: 参照可能な現セッション（日付の区切り未確認）。Axios の共通設定から、未使用の `token` についての質問までの関連する会話を反映。別セッションは参照していない。
 - 引き継ぎ元: なし。同じ原本に対応する既存の復習版はなく、今回が初回。
-- 関連する実装 PR: [ログイン処理とユーザー状態管理 #8](https://github.com/cane-bt/sandbox-notion-clone/pull/8)。未コミット時点の学習記録と、PR 用に整理した実装は区別する。
 - 実装の参照範囲: 整理時点の未コミット差分を含む作業ツリー。コードの存在を確認したもので、アプリの動作確認済みという意味ではない。
 
 <!-- TOC:START -->
@@ -78,7 +77,7 @@ Context 自体が state を保存・更新する Hook なのではなく、値�
 
 **AI による補足**
 
-整理時点の [current-user.state.ts](https://github.com/cane-bt/sandbox-notion-clone/blob/0a227e3/src/modules/auth/current-user.state.ts) では、次の atom を定義している。
+整理時点の [current-user.state.ts](../src/modules/auth/current-user.state.ts) では、次の atom を定義している。
 
 ```ts
 export const currentUserAtom = atom<User>();
