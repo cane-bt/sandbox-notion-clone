@@ -1,11 +1,15 @@
 ---
-source_sha256: 984a9153ecc1f73b6ad00b9aae76d303b0668087408732624315d40018f8edaf
+source_sha256: c99b668fd47255d6a0984dbb940dd950b72ab014ff9738e8b79cd3cb49847ea5
 translated_at: 2026-11-01
 ---
 
 # 変更履歴
 
 ## 2026-11-01
+
+### Fixed
+
+- TypeScript のビルドを妨げていたノート項目の未使用アイコン import を削除。
 
 ### Changed
 
