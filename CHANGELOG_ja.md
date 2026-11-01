@@ -1,9 +1,19 @@
 ---
-source_sha256: 646efa66f1c64af532bb8c03895a848b90bea294aaf9b53353ed1aef8913ef09
-translated_at: 2026-10-26
+source_sha256: c99b668fd47255d6a0984dbb940dd950b72ab014ff9738e8b79cd3cb49847ea5
+translated_at: 2026-11-01
 ---
 
 # 変更履歴
+
+## 2026-11-01
+
+### Fixed
+
+- TypeScript のビルドを妨げていたノート項目の未使用アイコン import を削除。
+
+### Changed
+
+- console 呼び出しを ESLint のエラー対象にし、`npm run lint -- --fix` で未使用 import を自動削除する設定を追加。import のソートは未導入。
 
 ## 2026-10-26
 
