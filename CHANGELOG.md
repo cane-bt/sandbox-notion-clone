@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-01
+
+### Changed
+
+- Enable ESLint errors for console calls and opt into automatic removal of unused imports with `npm run lint -- --fix`. Import sorting is not enabled.
+
 ## 2026-10-26
 
 ### Added

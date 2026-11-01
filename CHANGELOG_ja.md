@@ -1,9 +1,15 @@
 ---
-source_sha256: 646efa66f1c64af532bb8c03895a848b90bea294aaf9b53353ed1aef8913ef09
-translated_at: 2026-10-26
+source_sha256: 984a9153ecc1f73b6ad00b9aae76d303b0668087408732624315d40018f8edaf
+translated_at: 2026-11-01
 ---
 
 # 変更履歴
+
+## 2026-11-01
+
+### Changed
+
+- console 呼び出しを ESLint のエラー対象にし、`npm run lint -- --fix` で未使用 import を自動削除する設定を追加。import のソートは未導入。
 
 ## 2026-10-26
 
