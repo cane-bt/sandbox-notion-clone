@@ -1,5 +1,5 @@
 ---
-source_sha256: 25707619cab82250cd5b1995af5457d363fc7af23a85071a30ffcad845d25147
+source_sha256: 0850f6641592c0073071eab4c529fade91646e5e19873ed048baa2518d19d831
 translated_at: 2026-11-01
 ---
 
@@ -18,6 +18,7 @@ translated_at: 2026-11-01
 
 ### Changed
 
+- 11月1日の初回版・v2・保存原本も削除し、日付名の完成版と Git 履歴に集約。
 - 11月1日の復習版を日付名へ統合し、不要な v3・v4、受講 JSON と保存処理記録を削除。
 - Jotai 3 の依存要件に合わせ、Node.js 22.12 以降を必須として明記。
 - console 呼び出しを ESLint のエラー対象にし、`npm run lint -- --fix` で未使用 import を自動削除する設定を追加。import のソートは未導入。

@@ -13,6 +13,7 @@
 
 ### Changed
 
+- Remove the remaining November 1 review copies and archived source; retain the completed daily note and Git history.
 - Consolidate the November 1 review into its date-named file and remove redundant v3/v4 reviews, progress JSON, and save journals.
 - Require Node.js 22.12 or newer for the Jotai 3 dependency.
 - Enable ESLint errors for console calls and opt into automatic removal of unused imports with `npm run lint -- --fix`. Import sorting is not enabled.
