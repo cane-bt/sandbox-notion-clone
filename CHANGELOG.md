@@ -13,6 +13,7 @@
 
 ### Changed
 
+- Restore source archiving on the first TIL review; keep regeneration separate from archiving and do not restore previously deleted notes.
 - Remove the remaining November 1 review copies and archived source; retain the completed daily note and Git history.
 - Consolidate the November 1 review into its date-named file and remove redundant v3/v4 reviews, progress JSON, and save journals.
 - Require Node.js 22.12 or newer for the Jotai 3 dependency.
