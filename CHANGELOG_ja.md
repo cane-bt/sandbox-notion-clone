@@ -1,9 +1,16 @@
 ---
-source_sha256: 646efa66f1c64af532bb8c03895a848b90bea294aaf9b53353ed1aef8913ef09
-translated_at: 2026-10-26
+source_sha256: 426dbfc362f8a9e6052fd6dd6c0d1ef9cfbaa95bb8fce2abfffa502a886a0db9
+translated_at: 2026-11-01
 ---
 
 # 変更履歴
+
+## 2026-11-01
+
+### Added
+
+- Udemy 講座と総動画数53本、日々の進捗と日付別の学習履歴を記録。
+- TIL 原本を `_TIL/_draft/` に保持し、版番号付き復習版・受講データ・検証済み保存記録を追加。生成スキルはローカル管理とし、このリポジトリでは配布しない。
 
 ## 2026-10-26
 

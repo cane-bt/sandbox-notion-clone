@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-01
+
+### Added
+
+- Record the Udemy course and its 53-video total, daily progress, and dated learning history.
+- Preserve the original TIL in `_TIL/_draft/` alongside versioned reviews, structured progress data, and the verified save-operation record. The generator skill remains local and is not distributed in this repository.
+
 ## 2026-10-26
 
 ### Added
