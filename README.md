@@ -4,7 +4,7 @@ A React + TypeScript + Vite sandbox for a Notion-style application. It includes 
 
 ## Development
 
-Requires Node.js 20.19+ on the 20.x line, or Node.js 22.12+ (as required by Vite), and npm.
+Requires Node.js 22.12+ and npm. Jotai 3 requires Node.js 22.12 or newer.
 
 ```sh
 npm ci

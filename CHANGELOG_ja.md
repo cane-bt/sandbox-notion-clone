@@ -1,11 +1,15 @@
 ---
-source_sha256: 25dab9b8d3c16a25410ce5d6630bf8f09a7fa0fe1c8993d2147f8e1949856fc7
+source_sha256: df0f7f3a17b32da334b7c72019148ffe9c599a94ffab36dd08e2a091f77cf31c
 translated_at: 2026-11-01
 ---
 
 # 変更履歴
 
 ## 2026-11-01
+
+### Changed
+
+- Jotai 3 の依存要件に合わせ、Node.js 22.12 以降を必須として明記。
 
 ### Added
 

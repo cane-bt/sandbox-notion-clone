@@ -2,6 +2,10 @@
 
 ## 2026-11-01
 
+### Changed
+
+- Require Node.js 22.12 or newer for the Jotai 3 dependency.
+
 ### Added
 
 - A sign-in repository method that posts email and password to `/auth/signin` and returns a User entity and token.
