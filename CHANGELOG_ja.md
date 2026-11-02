@@ -1,9 +1,23 @@
 ---
-source_sha256: 5687d39cef22dab2a65e63d062cce5980c96ed1b3b9f6241696667e081fb4bc5
-translated_at: 2026-11-01
+source_sha256: a85adc984b37b4cd615a20ddd5174c8bce5444f7a165e2522373c34b9094e0cc
+translated_at: 2026-11-02
 ---
 
 # 変更履歴
+
+## 2026-11-02
+
+### Added
+
+- 起動時に現在のユーザー状態を復元し、取得中は読み込み表示に切り替え、古い Effect の結果を無視。
+
+- request interceptor で保存済み Bearer token を付与し、GET `/auth/me` と User への変換を追加。
+
+- 登録・ログインで取得したアクセストークンを localStorage に保存し、失敗時のアラートと送信中の再送防止を追加。
+
+### Changed
+
+- TypeScript の import・export に simple-import-sort を導入し、未使用 import の自動削除を無効化。未使用の検出は維持。
 
 ## 2026-11-01
 

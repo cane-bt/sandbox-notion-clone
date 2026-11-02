@@ -1,7 +1,8 @@
-import Item from './Item';
-import NoteList from '../NoteList';
-import UserItem from './UserItem';
 import { FiPlus, FiSearch } from 'react-icons/fi';
+
+import NoteList from '../NoteList';
+import Item from './Item';
+import UserItem from './UserItem';
 
 export default function SideBar() {
   return (
