@@ -1,9 +1,11 @@
-import SideBar from "./components/SideBar";
-import SearchModal from "./components/SearchModal";
 import "./styles/layout.css";
-import { Navigate, Outlet } from "react-router-dom";
-import { currentUserAtom } from "./modules/auth/current-user.state";
+
 import { useAtomValue } from "jotai";
+import { Navigate, Outlet } from "react-router-dom";
+
+import SearchModal from "./components/SearchModal";
+import SideBar from "./components/SideBar";
+import { currentUserAtom } from "./modules/auth/current-user.state";
 
 export default function Layout() {
   const currentUser = useAtomValue(currentUserAtom);

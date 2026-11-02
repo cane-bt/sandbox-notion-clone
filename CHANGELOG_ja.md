@@ -1,9 +1,15 @@
 ---
-source_sha256: 5687d39cef22dab2a65e63d062cce5980c96ed1b3b9f6241696667e081fb4bc5
-translated_at: 2026-11-01
+source_sha256: 21da02f9ffb8497f2ccdd9dda5266ff0823ec6f5b8639aad5ef7c26bdbc53ded
+translated_at: 2026-11-02
 ---
 
 # 変更履歴
+
+## 2026-11-02
+
+### Changed
+
+- TypeScript の import・export に simple-import-sort を導入し、未使用 import の自動削除を無効化。未使用の検出は維持。
 
 ## 2026-11-01
 

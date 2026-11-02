@@ -1,11 +1,13 @@
+import '../styles/pages/home.css';
+
+import { FiPlus } from 'react-icons/fi';
+
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
 } from '../components/ui/card';
-import { FiPlus } from 'react-icons/fi';
-import '../styles/pages/home.css';
 
 export default function Home() {
   return (

@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { FiX } from 'react-icons/fi';
-import { createPortal } from 'react-dom';
-
 import '../../styles/components/dialog.css';
+
+import * as React from 'react';
+import { createPortal } from 'react-dom';
+import { FiX } from 'react-icons/fi';
 
 // Context for Dialog
 interface DialogContextType {
@@ -265,13 +265,13 @@ DialogDescription.displayName = 'DialogDescription';
 
 export {
   Dialog,
-  DialogPortal,
-  DialogOverlay,
   DialogClose,
-  DialogTrigger,
   DialogContent,
-  DialogHeader,
-  DialogFooter,
-  DialogTitle,
   DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogOverlay,
+  DialogPortal,
+  DialogTitle,
+  DialogTrigger,
 };

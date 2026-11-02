@@ -1,9 +1,10 @@
-import * as React from 'react';
+import '../../styles/components/command.css';
+
 import { Command as CommandPrimitive } from 'cmdk';
+import * as React from 'react';
 import { FiSearch } from 'react-icons/fi';
 
 import { Dialog, DialogContent, DialogTitle } from './dialog';
-import '../../styles/components/command.css';
 
 const Command = React.forwardRef<
   React.ElementRef<typeof CommandPrimitive>,
@@ -132,11 +133,11 @@ CommandShortcut.displayName = 'CommandShortcut';
 export {
   Command,
   CommandDialog,
-  CommandInput,
-  CommandList,
   CommandEmpty,
   CommandGroup,
+  CommandInput,
   CommandItem,
-  CommandShortcut,
+  CommandList,
   CommandSeparator,
+  CommandShortcut,
 };

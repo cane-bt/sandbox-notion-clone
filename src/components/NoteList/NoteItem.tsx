@@ -1,16 +1,17 @@
 import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
-} from '../ui/dropdown-menu';
-import {
   FiChevronRight,
   FiMoreHorizontal,
   FiPlus,
   FiTrash2,
 } from 'react-icons/fi';
+
 import Item from '../SideBar/Item';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '../ui/dropdown-menu';
 
 export default function NoteItem() {
   const menu = (
