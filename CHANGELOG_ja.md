@@ -1,5 +1,5 @@
 ---
-source_sha256: d009565aac12ff9f982bf85d1d5fef6347f5fda6683262a4d4a8ca76e3cf55e1
+source_sha256: a85adc984b37b4cd615a20ddd5174c8bce5444f7a165e2522373c34b9094e0cc
 translated_at: 2026-11-02
 ---
 
@@ -8,6 +8,8 @@ translated_at: 2026-11-02
 ## 2026-11-02
 
 ### Added
+
+- 起動時に現在のユーザー状態を復元し、取得中は読み込み表示に切り替え、古い Effect の結果を無視。
 
 - request interceptor で保存済み Bearer token を付与し、GET `/auth/me` と User への変換を追加。
 

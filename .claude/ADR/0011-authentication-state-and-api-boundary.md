@@ -1,7 +1,7 @@
 # ADR 0011: 認証 API とメモリ上のユーザー状態を分離する
 
 - 日付: 2026-11-01
-- 状態: 採用
+- 状態: 採用（トークン保存・起動時復元の未実装という時点の記録は [ADR 0019](0019-token-and-session-restoration.md) で更新）
 - 適用範囲: sandbox-notion-clone
 
 ## 背景
