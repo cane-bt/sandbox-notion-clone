@@ -1,5 +1,5 @@
 ---
-source_sha256: cb07de0d56ce08d98af4dda095f928a6c51e6383e177e8ab731f7bc372836152
+source_sha256: d009565aac12ff9f982bf85d1d5fef6347f5fda6683262a4d4a8ca76e3cf55e1
 translated_at: 2026-11-02
 ---
 
@@ -8,6 +8,8 @@ translated_at: 2026-11-02
 ## 2026-11-02
 
 ### Added
+
+- request interceptor で保存済み Bearer token を付与し、GET `/auth/me` と User への変換を追加。
 
 - 登録・ログインで取得したアクセストークンを localStorage に保存し、失敗時のアラートと送信中の再送防止を追加。
 

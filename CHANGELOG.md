@@ -4,6 +4,8 @@
 
 ### Added
 
+- Attach stored Bearer tokens through a request interceptor and add GET `/auth/me` with User conversion.
+
 - Persist access tokens from sign-up and sign-in in localStorage; show failure alerts and disable repeat submissions while pending.
 
 ### Changed
