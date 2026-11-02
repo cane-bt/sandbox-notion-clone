@@ -23,6 +23,8 @@
 
 - [ADR 0019: token の保存・送信と起動時のユーザー復元](0019-token-and-session-restoration.md)
 
+- [ADR 0020: ドキュメントのコード表記を共通化する](0020-document-code-formatting.md)
+
 ## 決定にしていない話題
 
 - [ADR 0018: Sort JSON の導入を保留し upstream Issue・PR を準備する](0018-defer-sort-json-and-plan-upstream-fixes.md)
