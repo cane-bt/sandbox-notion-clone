@@ -12,10 +12,24 @@ export default function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [currentUser, setCurrentUser] = useAtom(currentUserAtom);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const signup = async () => {
-    const { user } = await authRepository.signup(name, email, password);
-    setCurrentUser(user);
+    setIsSubmitting(true);
+    try {
+      const { user, token } = await authRepository.signup(
+        name,
+        email,
+        password,
+      );
+      // setItem関数を使用して"token"という名前でアクセストークンをローカルストレージに保存
+      localStorage.setItem("token", token);
+      setCurrentUser(user);
+    } catch {
+      alert("ユーザー登録に失敗しました");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (currentUser) return <Navigate to="/" replace />;
@@ -81,7 +95,7 @@ export default function Signup() {
               </div>
               <div>
                 <button
-                  disabled={!name || !email || !password}
+                  disabled={!name || !email || !password || isSubmitting}
                   onClick={signup}
                   className="home-button"
                   style={{ width: "100%" }}

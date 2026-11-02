@@ -2,6 +2,10 @@
 
 ## 2026-11-02
 
+### Added
+
+- Persist access tokens from sign-up and sign-in in localStorage; show failure alerts and disable repeat submissions while pending.
+
 ### Changed
 
 - Enable simple-import-sort for TypeScript imports and exports; disable automatic unused-import removal while retaining diagnostics.

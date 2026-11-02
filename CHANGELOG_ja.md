@@ -1,11 +1,15 @@
 ---
-source_sha256: 21da02f9ffb8497f2ccdd9dda5266ff0823ec6f5b8639aad5ef7c26bdbc53ded
+source_sha256: cb07de0d56ce08d98af4dda095f928a6c51e6383e177e8ab731f7bc372836152
 translated_at: 2026-11-02
 ---
 
 # 変更履歴
 
 ## 2026-11-02
+
+### Added
+
+- 登録・ログインで取得したアクセストークンを localStorage に保存し、失敗時のアラートと送信中の再送防止を追加。
 
 ### Changed
 
