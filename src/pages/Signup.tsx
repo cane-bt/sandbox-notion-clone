@@ -1,9 +1,11 @@
-import { useState } from "react";
 import "../styles/pages/auth.css";
+
+import { useAtom } from "jotai";
+import { useState } from "react";
+import { Navigate } from "react-router-dom";
+
 import { authRepository } from "../modules/auth/auth.repository";
 import { currentUserAtom } from "../modules/auth/current-user.state";
-import { useAtom } from "jotai";
-import { Navigate } from "react-router-dom";
 
 export default function Signup() {
   const [name, setName] = useState("");

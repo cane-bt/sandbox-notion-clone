@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-02
+
+### Changed
+
+- Enable simple-import-sort for TypeScript imports and exports; disable automatic unused-import removal while retaining diagnostics.
+
 ## 2026-11-01
 
 ### Added

@@ -21,7 +21,7 @@ npm run build
 npm run preview
 ```
 
-`npm run lint` reports console calls as errors. Run `npm run lint -- --fix` to apply supported fixes, including unused-import removal; console calls are reported rather than automatically removed. Import sorting is not configured.
+`npm run lint` reports console calls as errors. Run `npm run lint -- --fix` to sort imports and exports. Unused imports and variables remain errors, but automatic import removal is disabled to preserve module side effects. Side-effect imports keep their relative order; their position relative to value imports can change. Local VS Code settings enable ESLint fixes on explicit save and disable organizeImports; these editor settings are not tracked.
 
 The production build is written to `dist/`. `preview` serves that build locally.
 
