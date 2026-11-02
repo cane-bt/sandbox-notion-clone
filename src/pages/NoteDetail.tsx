@@ -1,5 +1,6 @@
-import TitleInput from '../components/TitleInput';
 import '../styles/pages/note-detail.css';
+
+import TitleInput from '../components/TitleInput';
 
 export default function NoteDetail() {
   return (

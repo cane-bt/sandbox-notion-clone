@@ -1,5 +1,7 @@
 import axios from "axios";
 
+import { addAuthorizationHeader } from "./interceptors/request";
+
 const baseURL = import.meta.env.VITE_API_URL; // React.jsで環境変数の値を取得するためのコードの書き方
 const api = axios.create({ baseURL });
 // React.jsからバックエンドへ送出するデータは主に2つ
@@ -10,5 +12,6 @@ const api = axios.create({ baseURL });
 
 // Content-Type: ボディ部分でどのようなデータ形式でデータを送るかを決定するための設定
 api.defaults.headers.common["Content-Type"] = "application/json";
+api.interceptors.request.use(addAuthorizationHeader);
 
 export default api;

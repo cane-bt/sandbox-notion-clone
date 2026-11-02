@@ -19,8 +19,16 @@
 
 - [ADR 0015: TIL の完成版を日付名に統合する](0015-simplify-til-storage.md)
 
+- [ADR 0016: ESLint で import と export の順序を統一する](0016-simple-import-sort.md)
+
+- [ADR 0019: token の保存・送信と起動時のユーザー復元](0019-token-and-session-restoration.md)
+
 - [ADR 0020: ドキュメントのコード表記を共通化する](0020-document-code-formatting.md)
 
 ## 決定にしていない話題
 
-Fetch への置換、import ソート・保存時自動修正、認証切れと権限不足に応じた一覧・トースト表示、トークン永続化は未採用または未実装の検討事項。Outline の設計意図は推測であり本リポジトリの決定根拠にしない。VS Code ミニマップの非表示は個人の表示設定でありプロジェクトの構成決定ではない。11月1日の18〜21完了などの受講実績は TIL データに保存し、ADR は記録方法を扱う。
+- [ADR 0018: Sort JSON の導入を保留し upstream Issue・PR を準備する](0018-defer-sort-json-and-plan-upstream-fixes.md)
+
+- [ADR 0017: 副作用 import と自動修正の扱い（調査・仮案、提案中）](0017-side-effect-imports-investigation.md)
+
+Fetch への置換、認証切れと権限不足に応じた一覧・トースト表示は未採用または未実装の検討事項。Outline の設計意図は推測であり本リポジトリの決定根拠にしない。VS Code ミニマップの非表示は個人の表示設定でありプロジェクトの構成決定ではない。11月1日の18〜21完了などの受講実績は TIL データに保存し、ADR は記録方法を扱う。

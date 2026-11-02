@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { FiCheck, FiChevronRight, FiCircle } from 'react-icons/fi';
-import { createPortal } from 'react-dom';
-
 import '../../styles/components/dropdown-menu.css';
+
+import * as React from 'react';
+import { createPortal } from 'react-dom';
+import { FiCheck, FiChevronRight, FiCircle } from 'react-icons/fi';
 
 // Context for DropdownMenu
 interface DropdownMenuContextType {
@@ -421,18 +421,18 @@ DropdownMenuShortcut.displayName = 'DropdownMenuShortcut';
 
 export {
   DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
   DropdownMenuCheckboxItem,
-  DropdownMenuRadioItem,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
   DropdownMenuLabel,
+  DropdownMenuPortal,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
   DropdownMenuSeparator,
   DropdownMenuShortcut,
-  DropdownMenuGroup,
-  DropdownMenuPortal,
   DropdownMenuSub,
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
-  DropdownMenuRadioGroup,
+  DropdownMenuTrigger,
 };

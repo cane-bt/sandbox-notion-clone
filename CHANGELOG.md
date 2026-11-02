@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-11-02
+
+### Added
+
+- Restore current-user state on startup, gate routes behind a loading view, and ignore stale Effect results.
+
+- Attach stored Bearer tokens through a request interceptor and add GET `/auth/me` with User conversion.
+
+- Persist access tokens from sign-up and sign-in in localStorage; show failure alerts and disable repeat submissions while pending.
+
+### Changed
+
+- Enable simple-import-sort for TypeScript imports and exports; disable automatic unused-import removal while retaining diagnostics.
+
 ## 2026-11-01
 
 ### Added
