@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-03
+
+### Added
+
+- Add a note entity that converts response timestamps to `Date` objects and a repository method to POST optional `title` and `parentId` values to `/notes`; UI integration is pending.
+
 ## 2026-11-02
 
 ### Added

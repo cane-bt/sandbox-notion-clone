@@ -1,6 +1,6 @@
 # sandbox-notion-clone
 
-A React + TypeScript + Vite sandbox for a Notion-style application. It includes sign-in (`/signin`), sign-up (`/signup`), home (`/`), and note detail (`/notes/:id`) screens, with a shared sidebar and search dialog. The sign-up and sign-in forms send registration and login data to the backend. Current-user state is shared with Jotai: sign-up and sign-in redirect to home, while home and note detail redirect to sign-in when no current user is set. The app restores current-user state from the backend on startup using a stored token. Note creation, editing, and persistence are not implemented yet.
+A React + TypeScript + Vite sandbox for a Notion-style application. It includes sign-in (`/signin`), sign-up (`/signup`), home (`/`), and note detail (`/notes/:id`) screens, with a shared sidebar and search dialog. The sign-up and sign-in forms send registration and login data to the backend. Current-user state is shared with Jotai: sign-up and sign-in redirect to home, while home and note detail redirect to sign-in when no current user is set. The app restores current-user state from the backend on startup using a stored token. A note repository can POST optional `title` and `parentId` values to `/notes` and convert the response into a `Note` with a `Date`-valued `createdAt`. The repository is not connected to the UI; note creation from the screen, editing, and persistence behavior have not been verified.
 
 ## Development
 

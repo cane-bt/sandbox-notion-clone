@@ -1,9 +1,15 @@
 ---
-source_sha256: a85adc984b37b4cd615a20ddd5174c8bce5444f7a165e2522373c34b9094e0cc
-translated_at: 2026-11-02
+source_sha256: a355632d6bece34949ff5e8a8e2d35db3a8a25ca3bc18566aedd534e3b99eb1f
+translated_at: 2026-11-03
 ---
 
 # 変更履歴
+
+## 2026-11-03
+
+### Added
+
+- レスポンスの日時を `Date` オブジェクトへ変換するノートエンティティと、任意の `title`・`parentId` を `/notes` に POST する repository メソッドを追加。画面への接続は未実装。
 
 ## 2026-11-02
 
