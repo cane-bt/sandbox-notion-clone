@@ -1,9 +1,15 @@
 ---
-source_sha256: a355632d6bece34949ff5e8a8e2d35db3a8a25ca3bc18566aedd534e3b99eb1f
-translated_at: 2026-11-03
+source_sha256: d588df43eeb103e2a5e3839733a0055b2a7eb4c7902704c1b5cc24a2c076ef5f
+translated_at: 2026-11-04
 ---
 
 # 変更履歴
+
+## 2026-11-04
+
+### Changed
+
+- ADR の自律的な選別・記録タイミング・未採用事項の明示記録依頼・部分的な方針置換を明文化。エージェント設定はローカル管理を維持。
 
 ## 2026-11-03
 

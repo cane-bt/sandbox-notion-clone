@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-04
+
+### Changed
+
+- Document autonomous ADR selection, recording timing, explicit requests for undecided topics, and partial policy replacement; agent configuration remains local.
+
 ## 2026-11-03
 
 ### Added
