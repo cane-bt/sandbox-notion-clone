@@ -1,9 +1,15 @@
 ---
-source_sha256: a355632d6bece34949ff5e8a8e2d35db3a8a25ca3bc18566aedd534e3b99eb1f
-translated_at: 2026-11-03
+source_sha256: 131ba661b5039fc39dd83543aa9ba775de7d04419e14ca6819132365850aa083
+translated_at: 2026-11-04
 ---
 
 # 変更履歴
+
+## 2026-11-04
+
+### Changed
+
+- プロジェクトの Prettier 設定で JavaScript・TypeScript の文字列にシングルクォートを優先。JSX 属性の引用符は既定の形式を維持。
 
 ## 2026-11-03
 

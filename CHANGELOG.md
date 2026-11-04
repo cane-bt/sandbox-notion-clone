@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-04
+
+### Changed
+
+- Prefer single quotes for JavaScript and TypeScript strings with a project Prettier configuration; JSX attribute quotes keep the default style.
+
 ## 2026-11-03
 
 ### Added
