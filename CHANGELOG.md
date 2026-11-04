@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-04
+
+### Added
+
+- Create notes from the home form, disable submission while pending, and merge returned notes into shared Jotai state by ID.
+
 ## 2026-11-03
 
 ### Added
