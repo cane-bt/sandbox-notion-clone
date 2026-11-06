@@ -2,8 +2,13 @@
 
 ## 2026-11-04
 
+### Added
+
+- Create notes from the home form, disable submission while pending, and merge returned notes into shared Jotai state by ID.
+
 ### Changed
 
+- Prefer single quotes for JavaScript and TypeScript strings with a project Prettier configuration; JSX attribute quotes keep the default style.
 - Document autonomous ADR selection, recording timing, explicit requests for undecided topics, and partial policy replacement; agent configuration remains local.
 
 ## 2026-11-03
