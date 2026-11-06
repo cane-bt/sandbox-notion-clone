@@ -25,6 +25,8 @@
 
 - [ADR 0020: ドキュメントのコード表記を共通化する](0020-document-code-formatting.md)
 
+- [ADR 0021: ADR の記録対象を自律的に選び追加・更新する](0021-automatic-adr-recording.md)
+
 ## 決定にしていない話題
 
 - [ADR 0018: Sort JSON の導入を保留し upstream Issue・PR を準備する](0018-defer-sort-json-and-plan-upstream-fixes.md)

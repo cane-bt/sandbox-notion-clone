@@ -1,5 +1,5 @@
 ---
-source_sha256: 8bfd2865877db88cec38f0638b6c2b42e6b67b951b483b80111ec7578e32f294
+source_sha256: cf89e2eae260d9563ecd87bfa87d4b85217596261afb9ef25648981b0cd35233
 translated_at: 2026-11-06
 ---
 
@@ -14,6 +14,7 @@ translated_at: 2026-11-06
 ### Changed
 
 - プロジェクトの Prettier 設定で JavaScript・TypeScript の文字列にシングルクォートを優先。JSX 属性の引用符は既定の形式を維持。
+- ADR の自律的な選別・記録タイミング・未採用事項の明示記録依頼・部分的な方針置換を明文化。エージェント設定はローカル管理を維持。
 
 ## 2026-11-03
 
