@@ -1,9 +1,15 @@
 ---
-source_sha256: a355632d6bece34949ff5e8a8e2d35db3a8a25ca3bc18566aedd534e3b99eb1f
-translated_at: 2026-11-03
+source_sha256: 620e49c65ccb7244262df48024b9b7d8a156ef507b2b57d86517fa25baab6371
+translated_at: 2026-11-04
 ---
 
 # 変更履歴
+
+## 2026-11-04
+
+### Added
+
+- ホームのフォームからノートを作成し、送信中のボタンを無効化して、返されたノートを ID ごとに Jotai の共有状態へ統合。
 
 ## 2026-11-03
 
