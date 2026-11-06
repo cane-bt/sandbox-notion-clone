@@ -6,6 +6,10 @@
 
 - Create notes from the home form, disable submission while pending, and merge returned notes into shared Jotai state by ID.
 
+### Changed
+
+- Prefer single quotes for JavaScript and TypeScript strings with a project Prettier configuration; JSX attribute quotes keep the default style.
+
 ## 2026-11-03
 
 ### Added

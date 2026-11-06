@@ -13,6 +13,10 @@ npm run dev
 
 The shared Axios client in `src/lib/api/index.ts` reads its base URL from `VITE_API_URL`. Set it in a local `.env` file when configuring a backend. `VITE_` variables are exposed to the browser; use public configuration values only. The sign-up screen uses `authRepository` to POST to `/auth/signup`, expecting a response containing `user` and `token`. The repository also provides `signin(email, password)` for `/auth/signin`, with the same response shape; the sign-in screen now calls this method with its email and password inputs. Both forms store the returned user in an in-memory Jotai atom and redirect to home. Both forms persist the access token under the localStorage key `token`, show an error alert on failure, and disable submission while pending. A request interceptor attaches `Authorization: Bearer <token>` when a stored token exists, to every request made with the shared client (including auth endpoints). `getCurrentUser()` calls GET `/auth/me`, expecting a user object directly in the response body, or no user data. On startup, App calls getCurrentUser(), shows a loading view until it settles, and restores the shared user on success. Failures clear the user state and finish loading; network errors and unauthenticated responses are not shown separately. Cleanup ignores stale results but does not cancel the request. localStorage is readable by JavaScript, so this learning implementation does not provide HttpOnly-cookie protection. The layout check controls client-side navigation; backend authentication and authorization remain necessary. Use test accounts while working on this learning implementation.
 
+## Formatting
+
+The project Prettier configuration prefers single quotes for JavaScript and TypeScript strings. JSX attribute quotes retain the default double quotes. Use the Prettier VS Code extension as the formatter; no Prettier CLI dependency or format script is installed by this change.
+
 ## Validation and build
 
 ```sh

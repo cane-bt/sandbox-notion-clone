@@ -1,6 +1,6 @@
 ---
-source_sha256: 620e49c65ccb7244262df48024b9b7d8a156ef507b2b57d86517fa25baab6371
-translated_at: 2026-11-04
+source_sha256: 8bfd2865877db88cec38f0638b6c2b42e6b67b951b483b80111ec7578e32f294
+translated_at: 2026-11-06
 ---
 
 # 変更履歴
@@ -10,6 +10,10 @@ translated_at: 2026-11-04
 ### Added
 
 - ホームのフォームからノートを作成し、送信中のボタンを無効化して、返されたノートを ID ごとに Jotai の共有状態へ統合。
+
+### Changed
+
+- プロジェクトの Prettier 設定で JavaScript・TypeScript の文字列にシングルクォートを優先。JSX 属性の引用符は既定の形式を維持。
 
 ## 2026-11-03
 
