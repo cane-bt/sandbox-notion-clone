@@ -27,6 +27,8 @@
 
 - [ADR 0021: ADR の記録対象を自律的に選び追加・更新する](0021-automatic-adr-recording.md)
 
+- [ADR 0022: 学習作業の公開と元ディレクトリの整理を専用スキルで扱う](0022-publish-learning-work.md)
+
 ## 決定にしていない話題
 
 - [ADR 0018: Sort JSON の導入を保留し upstream Issue・PR を準備する](0018-defer-sort-json-and-plan-upstream-fixes.md)
