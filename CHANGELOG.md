@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-06
+
+### Changed
+
+- Document the repository-specific learning-work publication workflow, preservation of unrelated edits, and reconciliation of the original working directory; skills and agent configuration remain local.
+
 ## 2026-11-04
 
 ### Added
