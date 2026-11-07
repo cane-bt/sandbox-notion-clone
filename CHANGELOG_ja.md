@@ -1,9 +1,15 @@
 ---
-source_sha256: 62d40fb59434600cf3019d98632b088beecfcd3919cc55c1b1ef0832221cac8e
-translated_at: 2026-11-06
+source_sha256: 1531f92dad6435b81c820761cfd91e0e6d778d4be42b8a5e536101a797d2cafb
+translated_at: 2026-11-07
 ---
 
 # 変更履歴
+
+## 2026-11-07
+
+### Changed
+
+- TIL の生成・再レビュー時に、Udemy の学習進捗の後へ「元の学習メモ」を最終節として配置。til-review の生成指示と出力テンプレートを公開し、その他のローカルツール・個人設定は除外を維持。
 
 ## 2026-11-06
 

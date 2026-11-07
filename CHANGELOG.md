@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-07
+
+### Changed
+
+- Place original learning notes after Udemy progress as the final section of generated and re-reviewed TILs. Publish the til-review instructions and output template; other local tooling and private settings remain excluded.
+
 ## 2026-11-06
 
 ### Changed

@@ -29,6 +29,8 @@
 
 - [ADR 0022: 学習作業の公開と元ディレクトリの整理を専用スキルで扱う](0022-publish-learning-work.md)
 
+- [ADR 0024: TIL の元の学習メモを最終節に配置する](0024-place-original-learning-notes-last.md)
+
 ## 決定にしていない話題
 
 - [ADR 0023: 関数のアルファベット順整列を今後の導入候補にする（提案中）](0023-consider-alphabetical-function-sorting.md)
