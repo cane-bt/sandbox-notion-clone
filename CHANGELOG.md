@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-07
+
+### Added
+
+- Fetch notes when the authenticated layout mounts, merge results into shared state, and show loading and failure feedback while ignoring stale Effect results. Keep the store update function stable to avoid repeated requests after renders. Rendering the fetched list remains pending.
+
 ## 2026-11-06
 
 ### Changed
