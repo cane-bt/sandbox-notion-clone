@@ -31,6 +31,8 @@
 
 ## 決定にしていない話題
 
+- [ADR 0023: 関数のアルファベット順整列を今後の導入候補にする（提案中）](0023-consider-alphabetical-function-sorting.md)
+
 - [ADR 0018: Sort JSON の導入を保留し upstream Issue・PR を準備する](0018-defer-sort-json-and-plan-upstream-fixes.md)
 
 - [ADR 0017: 副作用 import と自動修正の扱い（調査・仮案、提案中）](0017-side-effect-imports-investigation.md)
