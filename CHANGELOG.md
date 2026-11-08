@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-08
+
+### Added
+
+- Render notes from shared state in the sidebar, showing each note title and falling back to an untitled label when the title is null or undefined.
+
 ## 2026-11-07
 
 ### Added
