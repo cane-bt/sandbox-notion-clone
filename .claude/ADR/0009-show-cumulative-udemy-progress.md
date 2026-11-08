@@ -1,7 +1,7 @@
 # ADR 0009: Udemy の累積進捗と受講履歴を復習版の末尾に表示する
 
 - 日付: 2026-11-01
-- 状態: 採用
+- 状態: 一部置換（[ADR 0024](0024-place-original-learning-notes-last.md)。置換範囲は末尾に記載）
 - 置換対象: [ADR 0008](0008-preserve-udemy-daily-progress.md)
 
 ## 背景
@@ -35,3 +35,7 @@
 ## 2026-11-01 の公開方針変更
 
 ADR のローカル管理・Git 非追跡に関する記述は当時の方針。現在は [ADR 0014](0014-publish-adrs-preserve-local-skills.md) により ADR を公開する。スキル本体のローカル管理は維持する。
+
+## 2026-11-07 の部分変更
+
+「Udemy の学習進捗」を最終節に置く配置のみ、[ADR 0024](0024-place-original-learning-notes-last.md) で置換。参考資料 → Udemy の学習進捗 → 元の学習メモの順にし、元メモを最終節とする。集計・出所・履歴の方針は継続する。
