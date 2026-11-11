@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-11
+
+### Changed
+
+- Link TIL questions and explanations to their source files or document sections, with a navigable summary and explicit unknown or unanswered items.
+
 ## 2026-11-08
 
 ### Added

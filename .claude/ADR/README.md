@@ -31,6 +31,8 @@
 
 - [ADR 0024: TIL の元の学習メモを最終節に配置する](0024-place-original-learning-notes-last.md)
 
+- [ADR 0025: TIL の疑問と解説を対象ファイルに対応付ける](0025-trace-til-questions-to-files.md)
+
 ## 決定にしていない話題
 
 - [ADR 0023: 関数のアルファベット順整列を今後の導入候補にする（提案中）](0023-consider-alphabetical-function-sorting.md)

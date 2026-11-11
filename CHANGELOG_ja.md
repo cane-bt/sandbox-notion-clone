@@ -1,9 +1,15 @@
 ---
-source_sha256: 69c784117f657e5b1d3f4a63b0d70da4cebd3da1056220e743beb56b1c4a002f
-translated_at: 2026-11-08
+source_sha256: e81249804aa51ac864e2c966f3b4250eaaa5e64b1df76f2e09245ca8f0ef62ce
+translated_at: 2026-11-11
 ---
 
 # 変更履歴
+
+## 2026-11-11
+
+### Changed
+
+- TIL の疑問と解説を対象ファイル・文書の節に対応付け、本文へ移動できる一覧と未確認・未回答事項を記録。
 
 ## 2026-11-08
 
