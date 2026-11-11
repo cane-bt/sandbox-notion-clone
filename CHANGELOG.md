@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-11
+
+### Added
+
+- Create a child note from each sidebar note’s plus control, await the API result before adding it to shared state, and show an alert on failure.
+
 ## 2026-11-08
 
 ### Added

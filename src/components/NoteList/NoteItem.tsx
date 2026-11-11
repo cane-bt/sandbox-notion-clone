@@ -1,3 +1,4 @@
+import type React from 'react';
 import {
   FiChevronRight,
   FiMoreHorizontal,
@@ -16,9 +17,10 @@ import {
 
 interface Props {
   note: Note;
+  onCreate?: (event: React.MouseEvent) => void;
 }
 
-export default function NoteItem({ note }: Props) {
+export default function NoteItem({ note, onCreate }: Props) {
   const menu = (
     <div className="note-item-menu-container">
       <DropdownMenu>
@@ -39,7 +41,7 @@ export default function NoteItem({ note }: Props) {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-      <div className="note-item-menu-button" role="button" onClick={() => {}}>
+      <div className="note-item-menu-button" role="button" onClick={onCreate}>
         <FiPlus className="note-item-menu-icon" size={16} />
       </div>
     </div>
