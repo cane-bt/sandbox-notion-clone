@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-12
+
+### Added
+
+- Allow noteRepository.find to send an optional parentId query parameter when fetching notes; calls without options keep the existing request URL.
+
 ## 2026-11-11
 
 ### Added
