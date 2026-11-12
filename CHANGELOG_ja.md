@@ -1,11 +1,15 @@
 ---
-source_sha256: e81249804aa51ac864e2c966f3b4250eaaa5e64b1df76f2e09245ca8f0ef62ce
-translated_at: 2026-11-11
+source_sha256: 4c84e47925d0e11aefd2e44f46fa30259347a2489d73c7d0518602ee27c64412
+translated_at: 2026-11-12
 ---
 
 # 変更履歴
 
 ## 2026-11-11
+
+### Added
+
+- サイドバーの各ノートの「＋」から子ノートを作成し、API の結果を待って共有状態へ追加。失敗時はアラートを表示。
 
 ### Changed
 
