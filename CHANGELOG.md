@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-12
+
+### Changed
+
+- Treat completion entries in dated TIL progress sections as completed on the TIL date unless another date or cumulative scope is explicit; avoid repeated date questions.
+
 ## 2026-11-11
 
 ### Added

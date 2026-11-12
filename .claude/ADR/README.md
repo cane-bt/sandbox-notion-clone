@@ -33,6 +33,8 @@
 
 - [ADR 0025: TIL の疑問と解説を対象ファイルに対応付ける](0025-trace-til-questions-to-files.md)
 
+- [ADR 0026: TIL の完了記録は対象日を既定の受講日とする](0026-default-udemy-completion-date.md)
+
 ## 決定にしていない話題
 
 - [ADR 0023: 関数のアルファベット順整列を今後の導入候補にする（提案中）](0023-consider-alphabetical-function-sorting.md)
