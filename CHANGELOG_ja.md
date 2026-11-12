@@ -1,11 +1,15 @@
 ---
-source_sha256: b0486b9aaa17eda704bd842963172959be9dd05a7baff463ed88539391d24e69
+source_sha256: 5e29b653c9a3005e336ac2867af7d034e43168a37ce9685b16f50885a4f19e28
 translated_at: 2026-11-12
 ---
 
 # 変更履歴
 
 ## 2026-11-12
+
+### Added
+
+- `noteRepository.find` で任意の `parentId` をクエリパラメータとして送信可能に。引数なしの呼び出しは従来のリクエスト URL を維持。
 
 ### Changed
 

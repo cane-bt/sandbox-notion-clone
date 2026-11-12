@@ -2,6 +2,10 @@
 
 ## 2026-11-12
 
+### Added
+
+- Allow noteRepository.find to send an optional parentId query parameter when fetching notes; calls without options keep the existing request URL.
+
 ### Changed
 
 - Treat completion entries in dated TIL progress sections as completed on the TIL date unless another date or cumulative scope is explicit; avoid repeated date questions.
