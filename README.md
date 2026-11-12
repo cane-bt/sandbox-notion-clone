@@ -48,3 +48,5 @@ See [CHANGELOG.md](CHANGELOG.md) and [CHANGELOG_ja.md](CHANGELOG_ja.md) for chan
 `til-review` の[生成指示](.codex/skills/til-review/SKILL.md)と[出力テンプレート](.codex/skills/til-review/assets/til-review-template.md)を公開します。関連スクリプトやエージェント設定はローカル管理のため、clone だけで生成環境一式が揃うわけではありません。完成版の最終節は「元の学習メモ」とし、その後へ別の節を追加しません。この配置は今後の生成・再レビューに適用し、対象外の過去 TIL や退避原本は変更しません。
 
 今後の TIL では、対象ファイル・関数名や文書の節名、疑問、解説内容を対応付けて記録します。目次の後に「疑問と解説の一覧」を置き、本文の解説へリンクします。対象不明・一般論・未回答を区別し、行番号は質問時点の補助情報として扱います。過去の TIL は一括更新しません。方針は [ADR 0025](.claude/ADR/0025-trace-til-questions-to-files.md) を参照してください。
+
+日付付き TIL の受講進捗欄にある完了記録は、別日や累積記録の明示がなければ TIL の対象日の申告として扱います。受講日欄の空欄や教材表示の貼り付け形式だけでは再質問せず、明示された受講日を優先します。詳細は [ADR 0026](.claude/ADR/0026-default-udemy-completion-date.md) を参照してください。
