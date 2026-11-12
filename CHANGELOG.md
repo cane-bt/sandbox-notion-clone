@@ -6,6 +6,10 @@
 
 - Create a child note from each sidebar note’s plus control, await the API result before adding it to shared state, and show an alert on failure.
 
+### Changed
+
+- Link TIL questions and explanations to their source files or document sections, with a navigable summary and explicit unknown or unanswered items.
+
 ## 2026-11-08
 
 ### Added
