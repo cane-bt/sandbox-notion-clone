@@ -22,9 +22,15 @@ interface Props {
   note: Note;
   onCreate?: (event: React.MouseEvent) => void;
   onExpand?: (event: React.MouseEvent) => void;
+  layer?: number;
 }
 
-export default function NoteItem({ note, onCreate, onExpand }: Props) {
+export default function NoteItem({
+  note,
+  onCreate,
+  onExpand,
+  layer = 0,
+}: Props) {
   const [isHovered, setIsHovered] = useState(false);
 
   const getIcon = (): IconType => {
@@ -60,7 +66,7 @@ export default function NoteItem({ note, onCreate, onExpand }: Props) {
   return (
     <div
       role="button"
-      style={{ paddingLeft: '12px' }}
+      style={{ paddingLeft: `${layer * 12 + 12}px` }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
