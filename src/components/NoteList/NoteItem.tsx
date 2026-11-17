@@ -1,6 +1,9 @@
 import type React from 'react';
+import { useState } from 'react';
+import type { IconType } from 'react-icons';
 import {
   FiChevronRight,
+  FiFile,
   FiMoreHorizontal,
   FiPlus,
   FiTrash2,
@@ -18,9 +21,16 @@ import {
 interface Props {
   note: Note;
   onCreate?: (event: React.MouseEvent) => void;
+  onExpand?: (event: React.MouseEvent) => void;
 }
 
-export default function NoteItem({ note, onCreate }: Props) {
+export default function NoteItem({ note, onCreate, onExpand }: Props) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const getIcon = (): IconType => {
+    return isHovered ? FiChevronRight : FiFile;
+  };
+
   const menu = (
     <div className="note-item-menu-container">
       <DropdownMenu>
@@ -48,11 +58,17 @@ export default function NoteItem({ note, onCreate }: Props) {
   );
 
   return (
-    <div role="button" style={{ paddingLeft: '12px' }}>
+    <div
+      role="button"
+      style={{ paddingLeft: '12px' }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <Item
         label={note.title ?? '無題'}
-        icon={FiChevronRight}
+        icon={getIcon()}
         trailingItem={menu}
+        onIconClick={onExpand}
       />
     </div>
   );
