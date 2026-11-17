@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-17
+
+### Added
+
+- Fetch child notes when clicking a sidebar note icon, merge them into shared state, and show an alert on failure. Switch the file icon to a chevron on hover; the list remains flat.
+
 ## 2026-11-12
 
 ### Added

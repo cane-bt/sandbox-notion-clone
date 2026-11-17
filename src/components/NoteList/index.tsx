@@ -1,3 +1,4 @@
+import type { Note } from '../../modules/notes/note.entity';
 import { noteRepository } from '../../modules/notes/note.repository';
 import { useNoteStore } from '../../modules/notes/notes.state';
 import NoteItem from './NoteItem';
@@ -16,6 +17,18 @@ export default function NoteList() {
     }
   };
 
+  const fetchChildren = async (e: React.MouseEvent, note: Note) => {
+    e.preventDefault();
+
+    try {
+      const children = await noteRepository.find({ parentId: note.id });
+      if (children == null) return;
+      noteStore.set(children);
+    } catch {
+      alert('子ノートの取得に失敗しました');
+    }
+  };
+
   return (
     <>
       {notes.map((note) => (
@@ -23,6 +36,7 @@ export default function NoteList() {
           key={note.id}
           note={note}
           onCreate={(e) => createChild(e, note.id)}
+          onExpand={(e) => fetchChildren(e, note)}
         />
       ))}
     </>
