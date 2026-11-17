@@ -20,6 +20,7 @@
 - [ADR 0015: TIL の完成版を日付名に統合する](0015-simplify-til-storage.md)
 
 - [ADR 0016: ESLint で import と export の順序を統一する](0016-simple-import-sort.md)
+  - 2026-11-16: 保存時の `explicit` / `never` と自動保存の関係、代替案、検証範囲を補足。
 
 - [ADR 0019: token の保存・送信と起動時のユーザー復元](0019-token-and-session-restoration.md)
 
