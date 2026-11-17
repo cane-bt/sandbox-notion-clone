@@ -4,7 +4,11 @@
 
 ### Added
 
-- Fetch child notes when clicking a sidebar note icon, merge them into shared state, and show an alert on failure. Switch the file icon to a chevron on hover; the list remains flat.
+- Fetch child notes when clicking a sidebar note icon, merge them into shared state, and show an alert on failure. Switch the file icon to a chevron on hover; the list initially remained flat.
+
+### Changed
+
+- Render sidebar notes as a recursive tree grouped by parent ID, with children indented by depth; fetched and newly created children appear under their parent.
 
 ## 2026-11-12
 
