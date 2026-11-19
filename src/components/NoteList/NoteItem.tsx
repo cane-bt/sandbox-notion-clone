@@ -2,6 +2,7 @@ import type React from 'react';
 import { useState } from 'react';
 import type { IconType } from 'react-icons';
 import {
+  FiChevronDown,
   FiChevronRight,
   FiFile,
   FiMoreHorizontal,
@@ -23,6 +24,7 @@ interface Props {
   onCreate?: (event: React.MouseEvent) => void;
   onExpand?: (event: React.MouseEvent) => void;
   layer?: number;
+  expanded?: boolean;
 }
 
 export default function NoteItem({
@@ -30,11 +32,12 @@ export default function NoteItem({
   onCreate,
   onExpand,
   layer = 0,
+  expanded = false,
 }: Props) {
   const [isHovered, setIsHovered] = useState(false);
 
   const getIcon = (): IconType => {
-    return isHovered ? FiChevronRight : FiFile;
+    return expanded ? FiChevronDown : isHovered ? FiChevronRight : FiFile;
   };
 
   const menu = (

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-19
+
+### Added
+
+- Toggle child-note visibility after a successful fetch, show a down chevron for expanded notes, and expand the parent after creating a child. Child lists start collapsed; collapsing a parent resets descendant expansion.
+
 ## 2026-11-17
 
 ### Added
