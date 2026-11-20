@@ -9,6 +9,7 @@ export const useNoteStore = () => {
   const [notes, setNotes] = useAtom(notesAtom);
 
   const getAll = () => notes;
+  const getOne = (id: number) => notes.find((note) => note.id === id);
 
   const set = useCallback(
     (newNotes: Note[]) => {
@@ -26,5 +27,5 @@ export const useNoteStore = () => {
     [setNotes],
   );
 
-  return { getAll, set };
+  return { getAll, getOne, set };
 };

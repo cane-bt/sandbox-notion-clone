@@ -25,10 +25,12 @@ interface Props {
   onExpand?: (event: React.MouseEvent) => void;
   layer?: number;
   expanded?: boolean;
+  onClick: () => void;
 }
 
 export default function NoteItem({
   note,
+  onClick,
   onCreate,
   onExpand,
   layer = 0,
@@ -41,7 +43,7 @@ export default function NoteItem({
   };
 
   const menu = (
-    <div className="note-item-menu-container">
+    <div className="note-item-menu-container" onClick={(e) => e.stopPropagation()}>
       <DropdownMenu>
         <DropdownMenuTrigger>
           <div className="note-item-menu-button" role="button">
@@ -72,6 +74,7 @@ export default function NoteItem({
       style={{ paddingLeft: `${layer * 12 + 12}px` }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={onClick}
     >
       <Item
         label={note.title ?? '無題'}
