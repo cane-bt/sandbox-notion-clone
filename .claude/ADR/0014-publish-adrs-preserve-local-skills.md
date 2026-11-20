@@ -1,7 +1,7 @@
 # ADR 0014: ADR を Git で公開し、スキルはローカル管理を続ける
 
 - 日付: 2026-11-01
-- 状態: 一部置換（[ADR 0024](0024-place-original-learning-notes-last.md)。置換範囲は末尾に記載）
+- 状態: 一部置換（[ADR 0024](0024-place-original-learning-notes-last.md)、[ADR 0027](0027-merge-open-prs.md)。置換範囲は末尾に記載）
 - 適用範囲: sandbox-notion-clone
 
 ## 背景
@@ -27,3 +27,7 @@ ADR をローカルのままにする案は今回の公開依頼を満たさな�
 ## 2026-11-07 の部分変更
 
 スキルのローカル管理方針のうち、`til-review` の `SKILL.md` と出力テンプレートだけを [ADR 0024](0024-place-original-learning-notes-last.md) で公開対象へ変更。その他のスキル・個人設定・関連スクリプトのローカル管理は継続する。
+
+## 2026-11-20 の部分変更
+
+ユーザーの明示依頼により、`merge-open-prs` の `SKILL.md` と `references/verification-cases.md` を [ADR 0027](0027-merge-open-prs.md) で公開対象へ追加。その他のローカル管理方針は維持する。
