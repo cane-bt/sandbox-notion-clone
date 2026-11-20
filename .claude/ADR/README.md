@@ -38,6 +38,8 @@
 
 - [ADR 0027: Open PR の順次マージを専用スキルで扱う](0027-merge-open-prs.md)
 
+- [ADR 0028: 学習用途の lint の指摘を許容する](0028-allow-learning-lint-findings.md)
+
 ## 決定にしていない話題
 
 - [ADR 0023: 関数のアルファベット順整列を今後の導入候補にする（提案中）](0023-consider-alphabetical-function-sorting.md)
