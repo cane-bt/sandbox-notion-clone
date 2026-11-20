@@ -30,6 +30,8 @@ npm run build
 npm run preview
 ```
 
+This learning repository tolerates all lint errors and warnings, including new findings, while still running and reporting lint. Build failures, functional defects, and required GitHub conditions are evaluated separately. See [ADR 0028](.claude/ADR/0028-allow-learning-lint-findings.md).
+
 `npm run lint` reports console calls as errors. Run `npm run lint -- --fix` to sort imports and exports. Unused imports and variables remain errors, but automatic import removal is disabled to preserve module side effects. Side-effect imports keep their relative order; their position relative to value imports can change. Local VS Code settings enable ESLint fixes on explicit save and disable organizeImports; these editor settings are not tracked.
 
 The production build is written to `dist/`. `preview` serves that build locally.

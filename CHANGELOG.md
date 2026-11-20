@@ -7,6 +7,10 @@
 - Fetch notes by ID and display their titles on the detail page, with loading, not-found, and error states. Ignore stale responses when switching notes; titles are read-only.
 - Open note details from sidebar rows and after successful creation from home, the sidebar, or a child-note control. Expansion and menu clicks do not trigger row navigation.
 
+### Changed
+
+- Tolerate all lint errors and warnings in this learning repository while continuing to run and report lint; evaluate builds, functional defects, and required GitHub conditions separately.
+
 ## 2026-11-19
 
 ### Added
