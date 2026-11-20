@@ -36,6 +36,8 @@
 
 - [ADR 0026: TIL の完了記録は対象日を既定の受講日とする](0026-default-udemy-completion-date.md)
 
+- [ADR 0027: Open PR の順次マージを専用スキルで扱う](0027-merge-open-prs.md)
+
 ## 決定にしていない話題
 
 - [ADR 0023: 関数のアルファベット順整列を今後の導入候補にする（提案中）](0023-consider-alphabetical-function-sorting.md)

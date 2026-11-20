@@ -33,7 +33,9 @@ See [CHANGELOG.md](CHANGELOG.md) and [CHANGELOG_ja.md](CHANGELOG_ja.md) for chan
 
 ## 設計・運用の決定記録
 
-[ADR 一覧](.claude/ADR/README.md) に設計と運用の決定・代替案・経緯を記録します。ADR は Git で公開します。生成スキルは原則ローカル管理ですが、`til-review` の生成指示と出力テンプレートは明示依頼により公開します。個人設定やその他のスキルはローカル管理を維持します。`.claude/` 全体は除外しているため、新規 ADR は対象ファイルを明示して `git add -f .claude/ADR/<ファイル名>` で追加します。
+Open PR の順次マージにはローカルスキル `$merge-open-prs` を使います。開始時の対象を依存関係から並べ、各 PR の最新状態とマージ完了を確認します。「順序だけ」と指定すれば分析のみです。PR 公開は引き続き `publish-learning-work` / `quick-pr` の担当で、公開だけではマージしません。スキル本文と確認ケースはリポジトリに含めます。実行には GitHub へのアクセス権と利用可能な操作ツールが必要です。方針は [ADR 0027](.claude/ADR/0027-merge-open-prs.md) を参照してください。
+
+[ADR 一覧](.claude/ADR/README.md) に設計と運用の決定・代替案・経緯を記録します。ADR は Git で公開します。生成スキルは原則ローカル管理ですが、`til-review` の生成指示と出力テンプレート、および `merge-open-prs` の本文と確認ケースは明示依頼により公開します。個人設定やその他のスキルはローカル管理を維持します。`.claude/` 全体は除外しているため、新規 ADR は対象ファイルを明示して `git add -f .claude/ADR/<ファイル名>` で追加します。
 
 ## 学習用の教材
 
