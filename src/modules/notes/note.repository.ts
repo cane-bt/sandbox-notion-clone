@@ -15,4 +15,8 @@ export const noteRepository = {
     });
     return new Note(result.data);
   },
+  async findOne(id: number): Promise<Note> {
+    const result = await api.get(`/notes/${id}`);
+    return new Note(result.data);
+  },
 };

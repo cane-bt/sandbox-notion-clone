@@ -2,6 +2,7 @@ import '../styles/pages/home.css';
 
 import { useState } from 'react';
 import { FiPlus } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 
 import {
   Card,
@@ -16,6 +17,7 @@ export default function Home() {
   const [title, setTitle] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const noteStore = useNoteStore();
+  const navigate = useNavigate();
 
   const createNote = async () => {
     setIsSubmitting(true);
@@ -23,6 +25,7 @@ export default function Home() {
       const newNote = await noteRepository.create({ title });
       noteStore.set([newNote]);
       setTitle('');
+      navigate(`/notes/${newNote.id}`);
     } catch {
       alert('ノートの作成に失敗しました');
     } finally {
