@@ -41,6 +41,7 @@
 - [ADR 0028: 学習用途の lint の指摘を許容する](0028-allow-learning-lint-findings.md)
 - [ADR 0029: PR マージ後にローカル `main` を同期する](0029-sync-local-main.md)
 - [ADR 0030: ノートタイトルはフォーカスが外れたときに保存する](0030-save-note-title-on-blur.md)
+- [ADR 0031: PR の既定マージ方式を Merge commit にする](0031-default-to-merge-commit.md)
 
 ## 決定にしていない話題
 
