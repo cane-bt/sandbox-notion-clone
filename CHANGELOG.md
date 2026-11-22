@@ -4,6 +4,7 @@
 
 ### Changed
 
+- Save changed note titles on blur and allow retrying a failed save with the draft intact.
 - Fast-forward local `main` after merging PRs and report its worktree location or why sync was deferred.
 
 ## 2026-11-20
