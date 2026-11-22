@@ -21,10 +21,28 @@ export default function NoteDetail() {
 }
 
 function NoteDetailContent({ id }: { id: number }) {
-  const { getOne, set: setNotes } = useNoteStore();
-  const note = getOne(id);
+  const noteStore = useNoteStore();
+  const note = noteStore.getOne(id);
+  const setNotes = noteStore.set;
   const [isLoading, setIsLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  const [isSaving, setIsSaving] = useState(false);
+  const [saveFailed, setSaveFailed] = useState(false);
+
+  const saveTitle = async (title: string) => {
+    if (isSaving || title === (note?.title ?? '')) return;
+    setIsSaving(true);
+    setSaveFailed(false);
+    try {
+      const updatedNote = await noteRepository.update(id, { title });
+      noteStore.set([updatedNote]);
+    } catch {
+      setSaveFailed(true);
+    } finally {
+      setIsSaving(false);
+    }
+  };
 
   useEffect(() => {
     let ignore = false;
@@ -59,7 +77,12 @@ function NoteDetailContent({ id }: { id: number }) {
   return (
     <div className="note-detail-container">
       <div className="note-detail-content">
-        <TitleInput initialData={note} />
+        <TitleInput
+          initialTitle={note.title ?? ''}
+          isSaving={isSaving}
+          saveFailed={saveFailed}
+          onSave={saveTitle}
+        />
       </div>
     </div>
   );
