@@ -1,9 +1,15 @@
 ---
-source_sha256: 2f78c8fdaca5413b965da16e3ada8a857b16d2ac0aae5cfff0c4cc1c2871fb5a
-translated_at: 2026-11-20
+source_sha256: 923383bfbaca1fd35af7025e5912f758c92cb8f70d31cfa513423598199037b6
+translated_at: 2026-11-22
 ---
 
 # 変更履歴
+
+## 2026-11-22
+
+### Changed
+
+- PR のマージ後にローカル `main` を fast-forward し、worktree の場所または同期保留の理由を報告。
 
 ## 2026-11-20
 

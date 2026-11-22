@@ -39,6 +39,7 @@
 - [ADR 0027: Open PR の順次マージを専用スキルで扱う](0027-merge-open-prs.md)
 
 - [ADR 0028: 学習用途の lint の指摘を許容する](0028-allow-learning-lint-findings.md)
+- [ADR 0029: PR マージ後にローカル `main` を同期する](0029-sync-local-main.md)
 
 ## 決定にしていない話題
 

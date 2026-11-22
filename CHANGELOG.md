@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-22
+
+### Changed
+
+- Fast-forward local `main` after merging PRs and report its worktree location or why sync was deferred.
+
 ## 2026-11-20
 
 ### Added
