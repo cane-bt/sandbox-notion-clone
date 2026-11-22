@@ -42,6 +42,7 @@
 - [ADR 0029: PR マージ後にローカル `main` を同期する](0029-sync-local-main.md)
 - [ADR 0030: ノートタイトルはフォーカスが外れたときに保存する](0030-save-note-title-on-blur.md)
 - [ADR 0031: PR の既定マージ方式を Merge commit にする](0031-default-to-merge-commit.md)
+- [ADR 0032: マージ後は元ディレクトリで最新の `main` に戻る](0032-finish-merge-on-main.md)
 
 ## 決定にしていない話題
 

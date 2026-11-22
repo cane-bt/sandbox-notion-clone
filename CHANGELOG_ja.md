@@ -1,5 +1,5 @@
 ---
-source_sha256: addddbe40b7a8d8db57833b4db1671a66cb45441232932fc1f62b9215562400a
+source_sha256: 41fc1aef5a7e107b23d26dc011f2cd5c9cea01637017b99f89e0586e1ce488a6
 translated_at: 2026-11-22
 ---
 
@@ -9,6 +9,7 @@ translated_at: 2026-11-22
 
 ### Changed
 
+- PR マージ後、安全に切り替えられる場合は元の作業ディレクトリを最新の `main` に戻す。
 - PR の既定マージ方式を Merge commit に統一。
 - ノートタイトルの変更をフォーカスが外れたときに保存し、失敗時は入力内容を保持して再試行できるようにした。
 - PR のマージ後にローカル `main` を fast-forward し、worktree の場所または同期保留の理由を報告。
