@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-23
+
+### Added
+
+- Add a Japanese block editor with a light theme below the note title. Body edits are local to the open editor.
+
 ## 2026-11-22
 
 ### Changed

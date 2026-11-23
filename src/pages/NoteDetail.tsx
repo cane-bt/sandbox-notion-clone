@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom';
 import TitleInput from '../components/TitleInput';
 import { noteRepository } from '../modules/notes/note.repository';
 import { useNoteStore } from '../modules/notes/notes.state';
+import { Editor } from '../components/Editor';
 
 export default function NoteDetail() {
   const { id: paramId } = useParams();
@@ -83,6 +84,7 @@ function NoteDetailContent({ id }: { id: number }) {
           saveFailed={saveFailed}
           onSave={saveTitle}
         />
+        <Editor />
       </div>
     </div>
   );
