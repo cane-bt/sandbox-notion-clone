@@ -46,6 +46,8 @@
 
 - [ADR 0033: OS の外観設定への追従は教材に沿った実装後に行う](0033-defer-system-appearance.md)
 
+- [ADR 0034: 学習中は BlockNote の遅延読み込みを見送る](0034-defer-editor-lazy-loading.md)
+
 ## 決定にしていない話題
 
 - [ADR 0023: 関数のアルファベット順整列を今後の導入候補にする（提案中）](0023-consider-alphabetical-function-sorting.md)
