@@ -44,6 +44,8 @@
 - [ADR 0031: PR の既定マージ方式を Merge commit にする](0031-default-to-merge-commit.md)
 - [ADR 0032: マージ後は元ディレクトリで最新の `main` に戻る](0032-finish-merge-on-main.md)
 
+- [ADR 0033: OS の外観設定への追従は教材に沿った実装後に行う](0033-defer-system-appearance.md)
+
 ## 決定にしていない話題
 
 - [ADR 0023: 関数のアルファベット順整列を今後の導入候補にする（提案中）](0023-consider-alphabetical-function-sorting.md)
