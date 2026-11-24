@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-24
+
+### Changed
+
+- Load saved note bodies into the editor and save body changes to the API. Show an alert if saving fails.
+
 ## 2026-11-23
 
 ### Added

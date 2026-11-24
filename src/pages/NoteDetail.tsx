@@ -30,18 +30,31 @@ function NoteDetailContent({ id }: { id: number }) {
 
   const [isSaving, setIsSaving] = useState(false);
   const [saveFailed, setSaveFailed] = useState(false);
+  const [contentSaveFailed, setContentSaveFailed] = useState(false);
+
+  const updateNote = async (changes: { title?: string; content?: string }) => {
+    const updatedNote = await noteRepository.update(id, changes);
+    setNotes([updatedNote]);
+  };
 
   const saveTitle = async (title: string) => {
     if (isSaving || title === (note?.title ?? '')) return;
     setIsSaving(true);
     setSaveFailed(false);
     try {
-      const updatedNote = await noteRepository.update(id, { title });
-      noteStore.set([updatedNote]);
+      await updateNote({ title });
     } catch {
       setSaveFailed(true);
     } finally {
       setIsSaving(false);
+    }
+  };
+
+  const saveContent = async (content: string) => {
+    try {
+      await updateNote({ content });
+    } catch {
+      setContentSaveFailed(true);
     }
   };
 
@@ -84,7 +97,8 @@ function NoteDetailContent({ id }: { id: number }) {
           saveFailed={saveFailed}
           onSave={saveTitle}
         />
-        <Editor />
+        <Editor initialContent={note.content} onChange={saveContent} />
+        {contentSaveFailed && <div role="alert">本文の保存に失敗しました</div>}
       </div>
     </div>
   );
