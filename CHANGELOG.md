@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-24
+
+### Changed
+
+- Review all selected pull requests before the first merge or queue entry. Hold the batch and report fixes when a code defect is found.
+
 ## 2026-11-23
 
 ### Added

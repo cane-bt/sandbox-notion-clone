@@ -36,6 +36,7 @@
 
 - [ADR 0026: TIL の完了記録は対象日を既定の受講日とする](0026-default-udemy-completion-date.md)
 
+- [ADR 0035 全対象のコードレビューを順次マージの開始条件にする](0035-review-all-before-merge.md)
 - [ADR 0027: Open PR の順次マージを専用スキルで扱う](0027-merge-open-prs.md)
 
 - [ADR 0028: 学習用途の lint の指摘を許容する](0028-allow-learning-lint-findings.md)
