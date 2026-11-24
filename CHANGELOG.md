@@ -4,7 +4,7 @@
 
 ### Changed
 
-- Load saved note bodies into the editor and save body changes to the API. Show an alert if saving fails.
+- Load saved note bodies into the editor and save body changes to the API. Show an alert if saving fails and clear it after the next successful body save.
 
 ## 2026-11-23
 

@@ -53,6 +53,7 @@ function NoteDetailContent({ id }: { id: number }) {
   const saveContent = async (content: string) => {
     try {
       await updateNote({ content });
+      setContentSaveFailed(false);
     } catch {
       setContentSaveFailed(true);
     }

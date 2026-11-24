@@ -5,7 +5,7 @@ A React + TypeScript + Vite sandbox for a Notion-style application. It includes 
 
 Note details now fetch `/notes/:id`, merge the response into shared state, and show an editable title with an untitled placeholder. Invalid IDs and 404 responses show a not-found message; other failures show an error. Switching IDs resets loading and ignores stale responses. Sidebar rows open details, and successful creation from home, the sidebar root control, or a child control opens the new note. Expansion and menu actions stop click propagation so they do not open the parent note. Leaving the title field saves a changed draft via PATCH to `/notes/:id`. The field is disabled during saving. A failed save preserves the draft and offers a retry.
 
-The block editor initializes from the saved JSON body and sends body edits via PATCH. A failed body save displays an alert.
+The block editor initializes from the saved JSON body and sends body edits via PATCH. A failed body save displays an alert until a subsequent body save succeeds.
 
 Mock-adapter browser checks cover detail navigation, title switching and fallback, loading, stale responses, 404 and server errors, invalid IDs, expansion/menu isolation, child-creation failure, and successful home/sidebar/child creation navigation. Real-backend integration remains unverified.
 
