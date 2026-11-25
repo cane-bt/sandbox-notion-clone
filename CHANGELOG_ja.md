@@ -1,5 +1,5 @@
 ---
-source_sha256: f9a1d796ef9bbca93e7da15bb69be26fd98512f98bc74bcd018afeea78c401d9
+source_sha256: cff201b6e18c50dbd39a3dbe1028cf989eba0467e9c1b5ef3ca2a47310c85081
 translated_at: 2026-11-25
 ---
 
@@ -9,6 +9,7 @@ translated_at: 2026-11-25
 
 ### Changed
 
+- PR の英日変更履歴で独立した追記が競合した場合に、双方を保持して再検証してからマージする。
 - マージ前レビューで見つけた問題を ADR に記録し、依存関係・検証・必須条件を PR ごとに判断する。
 
 ## 2026-11-24
