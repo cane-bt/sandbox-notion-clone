@@ -1,11 +1,15 @@
 ---
-source_sha256: cff201b6e18c50dbd39a3dbe1028cf989eba0467e9c1b5ef3ca2a47310c85081
+source_sha256: 3801de9c3ff9886ce166828fe59fcfb7f704d4e7e9d913ef28f4585bebda9cb7
 translated_at: 2026-11-25
 ---
 
 # 変更履歴
 
 ## 2026-11-25
+
+### Added
+
+- サイドバーの「検索」でモーダルを開き、Esc キー、閉じるボタン、枠の外のクリックで閉じられるようにした。
 
 ### Changed
 

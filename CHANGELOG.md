@@ -2,6 +2,10 @@
 
 ## 2026-11-25
 
+### Added
+
+- Open the search dialog from the sidebar and dismiss it with Escape, the close button, or a click outside.
+
 ### Changed
 
 - Resolve independent additions to the English and Japanese changelogs before merging a pull request.
