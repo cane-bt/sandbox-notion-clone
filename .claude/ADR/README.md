@@ -58,3 +58,6 @@
 - [ADR 0017: 副作用 import と自動修正の扱い（調査・仮案、提案中）](0017-side-effect-imports-investigation.md)
 
 Fetch への置換、認証切れと権限不足に応じた一覧・トースト表示は未採用または未実装の検討事項。Outline の設計意図は推測であり本リポジトリの決定根拠にしない。VS Code ミニマップの非表示は個人の表示設定でありプロジェクトの構成決定ではない。11月1日の18〜21完了などの受講実績は TIL データに保存し、ADR は記録方法を扱う。
+- [ADR 0036 レビューの問題を ADR に記録して PR ごとに判断する](0036-record-merge-review-findings.md)
+- [ADR 0037 検索モーダルのフォーカス管理を確認事項として残す](0037-search-dialog-keyboard-focus.md)
+- [ADR 0038 英日変更履歴の追記競合を解消する](0038-changelog-conflict-resolution.md)

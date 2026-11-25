@@ -6,6 +6,11 @@
 
 - Open the search dialog from the sidebar and dismiss it with Escape, the close button, or a click outside.
 
+### Changed
+
+- Resolve independent additions to the English and Japanese changelogs before merging a pull request.
+- Record merge review findings in an ADR and evaluate each pull request against its dependencies and merge requirements.
+
 ## 2026-11-24
 
 ### Changed
