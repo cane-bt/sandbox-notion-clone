@@ -18,6 +18,7 @@ export default function Layout() {
   // setNotes  ：取り出したものに付ける変数
   const { set: setNotes } = useNoteStore();
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [isShowModal, setIsShowModal] = useState(false);
   // useEffect(() => {
   //   fetchNotes();
   // }, []);
@@ -68,14 +69,16 @@ export default function Layout() {
 
   return (
     <div className="layout-container">
-      {!isLoading && <SideBar />}
+      {!isLoading && (
+        <SideBar onSearchButtonClick={() => setIsShowModal(true)} />
+      )}
 
       <main className="layout-main">
         {isLoading && <p role="status">読み込み中...</p>}
         {errorMessage && <p role="alert">{errorMessage}</p>}
         <Outlet />
       </main>
-      <SearchModal />
+      <SearchModal isOpen={isShowModal} onClose={() => setIsShowModal(false)} />
     </div>
   );
 }

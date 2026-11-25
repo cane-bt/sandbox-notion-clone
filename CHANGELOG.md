@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-25
+
+### Added
+
+- Open the search dialog from the sidebar and dismiss it with Escape, the close button, or a click outside.
+
 ## 2026-11-24
 
 ### Changed

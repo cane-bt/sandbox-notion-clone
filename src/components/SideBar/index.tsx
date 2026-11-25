@@ -7,7 +7,11 @@ import NoteList from '../NoteList';
 import Item from './Item';
 import UserItem from './UserItem';
 
-export default function SideBar() {
+type Props = {
+  onSearchButtonClick: () => void;
+};
+
+export default function SideBar({ onSearchButtonClick }: Props) {
   const noteStore = useNoteStore();
   const navigate = useNavigate();
 
@@ -27,7 +31,7 @@ export default function SideBar() {
         <div>
           <div>
             <UserItem />
-            <Item label="検索" icon={FiSearch} onClick={() => {}} />
+            <Item label="検索" icon={FiSearch} onClick={onSearchButtonClick} />
           </div>
           <div className="sidebar-spacer">
             <NoteList />
