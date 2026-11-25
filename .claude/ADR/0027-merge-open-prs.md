@@ -1,7 +1,7 @@
 # ADR 0027: Open PR の順次マージを専用スキルで扱う
 
 - 日付: 2026-11-20
-- 状態: 一部置換（lint の許容条件を [ADR 0028](0028-allow-learning-lint-findings.md)、ローカル同期を [ADR 0029](0029-sync-local-main.md) で更新。既定のマージ方式は [ADR 0031](0031-default-to-merge-commit.md) で確定。コード不具合時の停止範囲は [ADR 0035](0035-review-all-before-merge.md) で更新。その他は維持）
+- 状態: 一部置換（lint の許容条件を [ADR 0028](0028-allow-learning-lint-findings.md)、ローカル同期を [ADR 0029](0029-sync-local-main.md) で更新。既定のマージ方式は [ADR 0031](0031-default-to-merge-commit.md) で確定。コード不具合時の停止範囲は [ADR 0035](0035-review-all-before-merge.md)、続いて [ADR 0036](0036-record-merge-review-findings.md) で更新。その他は維持）
 - 関連: [ADR 0022](0022-publish-learning-work.md) の公開処理との役割分担を補足する。公開時にマージしない方針は維持。
 
 ## 背景
