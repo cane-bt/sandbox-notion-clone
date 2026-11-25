@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-25
+
+### Changed
+
+- Record merge review findings in an ADR and evaluate each pull request against its dependencies and merge requirements.
+
 ## 2026-11-24
 
 ### Changed

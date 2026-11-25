@@ -1,9 +1,15 @@
 ---
-source_sha256: 9cf3f94a288b2c68438512b62be13e016afb2a0763654395bdff23516d593e20
-translated_at: 2026-11-24
+source_sha256: f9a1d796ef9bbca93e7da15bb69be26fd98512f98bc74bcd018afeea78c401d9
+translated_at: 2026-11-25
 ---
 
 # 変更履歴
+
+## 2026-11-25
+
+### Changed
+
+- マージ前レビューで見つけた問題を ADR に記録し、依存関係・検証・必須条件を PR ごとに判断する。
 
 ## 2026-11-24
 
