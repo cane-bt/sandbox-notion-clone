@@ -9,6 +9,7 @@ import SideBar from './components/SideBar';
 import { currentUserAtom } from './modules/auth/current-user.state';
 import { noteRepository } from './modules/notes/note.repository';
 import { useNoteStore } from './modules/notes/notes.state';
+import type { Note } from './modules/notes/note.entity';
 
 export default function Layout() {
   const currentUser = useAtomValue(currentUserAtom);
@@ -19,10 +20,16 @@ export default function Layout() {
   const { set: setNotes } = useNoteStore();
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [isShowModal, setIsShowModal] = useState(false);
+  const [searchResult, setSearchResult] = useState<Note[]>([]);
   // useEffect(() => {
   //   fetchNotes();
   // }, []);
 
+  const searchNotes = async (keyword: string) => {
+    const notes = await noteRepository.find({ keyword });
+    setNotes(notes);
+    setSearchResult(notes ?? []);
+  };
   // const fetchNotes = async () => {
   //   setIsLoading(true);
   //   const notes = await noteRepository.find();
@@ -78,7 +85,12 @@ export default function Layout() {
         {errorMessage && <p role="alert">{errorMessage}</p>}
         <Outlet />
       </main>
-      <SearchModal isOpen={isShowModal} onClose={() => setIsShowModal(false)} />
+      <SearchModal
+        isOpen={isShowModal}
+        onClose={() => setIsShowModal(false)}
+        notes={searchResult}
+        onKeywordChange={searchNotes}
+      />
     </div>
   );
 }

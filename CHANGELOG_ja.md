@@ -1,9 +1,15 @@
 ---
-source_sha256: 3801de9c3ff9886ce166828fe59fcfb7f704d4e7e9d913ef28f4585bebda9cb7
-translated_at: 2026-11-25
+source_sha256: a63ba125fd3730772c62f20b759d607c514d3bdf6706f322ddfdb3aa4877d7cd
+translated_at: 2026-11-26
 ---
 
 # 変更履歴
+
+## 2026-11-26
+
+### Added
+
+- サイドバーの検索モーダルでキーワード検索を行い、取得したノートのタイトルを表示する。
 
 ## 2026-11-25
 
