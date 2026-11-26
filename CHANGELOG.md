@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-26
+
+### Added
+
+- Search notes by keyword from the sidebar dialog and display the returned titles.
+
 ## 2026-11-25
 
 ### Added
