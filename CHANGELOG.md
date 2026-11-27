@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-27
+
+### Changed
+
+- Debounce note searches and title and content saves by 500 ms. Restore title focus after saving when appropriate.
+
 ## 2026-11-26
 
 ### Added

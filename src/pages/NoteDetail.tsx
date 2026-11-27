@@ -8,6 +8,7 @@ import TitleInput from '../components/TitleInput';
 import { noteRepository } from '../modules/notes/note.repository';
 import { useNoteStore } from '../modules/notes/notes.state';
 import { Editor } from '../components/Editor';
+import { useDebouncedCallback } from 'use-debounce';
 
 export default function NoteDetail() {
   const { id: paramId } = useParams();
@@ -38,6 +39,7 @@ function NoteDetailContent({ id }: { id: number }) {
   };
 
   const saveTitle = async (title: string) => {
+    console.log('called');
     if (isSaving || title === (note?.title ?? '')) return;
     setIsSaving(true);
     setSaveFailed(false);
@@ -49,8 +51,11 @@ function NoteDetailContent({ id }: { id: number }) {
       setIsSaving(false);
     }
   };
+  const debouncedTitle = useDebouncedCallback(saveTitle, 500);
 
   const saveContent = async (content: string) => {
+    console.log('called');
+
     try {
       await updateNote({ content });
       setContentSaveFailed(false);
@@ -58,6 +63,8 @@ function NoteDetailContent({ id }: { id: number }) {
       setContentSaveFailed(true);
     }
   };
+
+  const debouncedContent = useDebouncedCallback(saveContent, 500);
 
   useEffect(() => {
     let ignore = false;
@@ -96,9 +103,10 @@ function NoteDetailContent({ id }: { id: number }) {
           initialTitle={note.title ?? ''}
           isSaving={isSaving}
           saveFailed={saveFailed}
-          onSave={saveTitle}
+          onTitleChange={debouncedTitle}
+          onRetry={saveTitle}
         />
-        <Editor initialContent={note.content} onChange={saveContent} />
+        <Editor initialContent={note.content} onChange={debouncedContent} />
         {contentSaveFailed && <div role="alert">本文の保存に失敗しました</div>}
       </div>
     </div>
